@@ -1,0 +1,43 @@
+body {
+    background: $white;
+    font: 100%/1.5 $font;
+    -webkit-text-size-adjust: 100%;
+    color: $purple;
+}
+
+
+
+
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+
+    @include md {
+        width: 1080px;
+
+    }
+
+    @include lg {
+        width: 1280px;
+    }
+
+    @include xl {
+        width: 1760px;
+    }
+}
+
+b,
+strong {
+    font-weight: 500;
+}
+
+
+p {
+
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 300;
+}

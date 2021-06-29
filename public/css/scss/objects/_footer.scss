@@ -1,0 +1,98 @@
+.footer {
+    background: $lpurple;
+    padding: 50px 50px;
+
+
+    @include sm {
+    	padding: 20px 20px;
+    	display: block;
+    }
+
+
+    &-nav {
+
+        &__list {
+
+        	li {
+        		margin: 5px 0;
+        	}
+
+            a {
+                color: $white;
+                font-size: 15px;
+                line-height: 18px;
+                font-weight: 400;
+            }
+        }
+
+
+        @include sm {
+            display: block;
+            margin-bottom: 50px;
+        }
+
+
+        @include md {
+
+            display: flex;
+
+            &__list {
+                order: 1;
+                margin-right: 100px;
+
+                a {
+                	font-size: 16px;
+                	line-height: 19px;
+                }
+            }
+
+            &__list:first-child {
+                order: 2;
+                margin-right: 0;
+            }
+
+        }
+    }
+
+
+    &-logo {
+
+    	 
+    	display: inline-block;
+    }
+
+}
+
+
+
+.ft {
+
+	display: block;
+
+
+
+	&__socials {
+
+		margin: 20px 0;
+	}
+
+	&__container {
+		display: block;
+	}
+
+	&__copyright {
+
+		font-size: 12px;
+		font-weight: 300;
+	}
+
+	@include md {
+
+		&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+		
+	}
+}

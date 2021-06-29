@@ -1,0 +1,10 @@
+.nav-list {
+
+	li {
+		display: block;
+
+		&:not(:last-child) {
+			padding-right: 50px;
+		}
+	}
+}

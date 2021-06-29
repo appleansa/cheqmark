@@ -1,0 +1,22 @@
+.circle {
+
+	display: block;
+
+position: absolute;
+    width: 50%;
+    padding-top: 50%;
+    border-radius: 50%;
+    z-index: -1;
+
+	&.circle-bottom-left {
+			top: 0;
+			left: 50%;
+
+	}
+
+	&.circle-bottom-right {
+
+		top: 0;
+		left: 50%;
+	}
+}

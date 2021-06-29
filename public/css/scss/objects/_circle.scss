@@ -1,0 +1,27 @@
+.circle {
+    display: block;
+    position: absolute;
+    width: 160%;
+    padding-top: 160%;
+    border-radius: 50%;
+    z-index: -1;
+
+    &.circle-bottom-left {
+        top: 15%;
+        right: 20%;
+
+    }
+
+    &.circle-bottom-right {
+
+        top: 10%;
+        left: -10%;
+    }
+
+
+    @include sm {
+        display: none;
+    }
+
+
+}

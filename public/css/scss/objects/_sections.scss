@@ -1,0 +1,139 @@
+
+.section {
+
+   width: 100%;
+   min-height: 100vh;
+   position: relative;
+   overflow: hidden;
+
+@include sm {
+
+   min-height: auto;
+}
+
+}
+
+
+
+.content {
+    width: 40%;
+
+    @include sm {
+
+        width: 100%;
+    }
+
+
+    @include md {
+
+
+      .text-block {
+
+        max-width: 400px;
+      }
+    }
+
+     @include xl {
+
+
+      .text-block {
+
+        max-width: 500px;
+      }
+    }
+
+
+}
+
+.image {
+    width: 60%;
+    text-align: center;
+    z-index: 20;
+
+    position: relative;
+
+    @include sm {
+
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+
+        }
+
+    }
+}
+
+ 
+
+
+.section-1 {
+
+ .image {
+  width: 45%;
+ }
+
+ .content {
+
+  width: 55%;
+ }
+
+
+@include sm {
+
+  padding: 70px 0 50px;
+
+
+.btn {
+  margin-bottom: 20px;
+}
+
+
+.image, .content {
+  width: 100%;
+}
+
+}
+
+}
+
+
+.section-2 {
+
+
+@include sm {
+
+  padding: 50px 0 50px;
+}
+
+}
+
+.section-3 {
+
+
+@include sm {
+
+  padding: 50px 0 50px;
+}
+
+}
+
+.section-4 {
+
+
+@include sm {
+
+  padding: 70px 0 0;
+}
+
+@include md {
+
+  .content {
+    padding-left: 5%;
+  }
+}
+
+
+
+}

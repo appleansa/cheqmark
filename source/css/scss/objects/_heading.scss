@@ -1,0 +1,57 @@
+ h1 {
+     font-weight: 700;
+     line-height: 1;
+     font-size: 25px;
+     line-height: 25px;
+
+     @include md {
+         font-size: 70px;
+         line-height: 70px;
+     }
+
+
+     @include xl {
+         font-size: 80px;
+         line-height: 80px;
+     }
+
+ }
+
+ .heading {
+     margin-bottom: 20px;
+ }
+
+
+ h2 {
+     font-weight: 700;
+     line-height: 1;
+     font-size: 20px;
+     line-height: 24px;
+
+     @include md {
+         font-size: 40px;
+         line-height: 48px;
+     }
+
+
+     @include xl {
+         font-size: 50px;
+         line-height: 60px;
+     }
+
+ }
+
+ h3 {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 19px;
+     margin-bottom: 10px;
+
+     @include md {
+         font-size: 25px;
+         line-height: 30px;
+     }
+
+
+
+ }

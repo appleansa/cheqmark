@@ -1,0 +1,184 @@
+/*------------------------------------*\
+    $GLOBAL CLASSES
+\*------------------------------------*/
+
+/* Clearfix */
+.clear {
+    *zoom: 1;
+}
+
+.clear:before,
+.clear:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clear:after {
+    clear: both;
+}
+
+/* Completely remove from the flow and screen readers. */
+.is-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Completely remove from the flow but leave available to screen readers. */
+.is-vishidden {
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.mobile-visible {
+
+    visibility: hidden;
+    display: none;
+
+ @include sm {
+       visibility: visible;
+       display: block;
+    }
+}
+
+.mobile-hidden {
+
+   visibility: visible;
+       display: block;
+
+ @include sm {
+      
+
+        visibility: hidden;
+    display: none;
+    }
+}
+
+
+/* Floats */
+.right {
+    float: right;
+}
+.left {
+    float: left;
+
+}
+
+/* Text-Align */
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+
+
+
+
+.flex {
+    display: flex;
+}
+
+.flex-justify {
+    justify-content: space-between;
+}
+
+.flex-va-center {
+    align-items: center;
+}
+
+.flex-mobile-col {
+
+
+@include sm {
+
+    flex-direction: column;
+}
+
+
+}
+
+// desktop row reverse
+
+.d-fr-reverse {
+
+    @include md {
+
+        flex-direction: row-reverse;
+    }
+
+
+}
+
+
+
+
+// height for objects
+
+.vh100 {
+    @include md {
+        min-height: 100vh;
+    }
+}
+
+
+
+// background colors
+
+.bg-orange {
+    background: $orange;
+}
+
+
+.bg-gray {
+    background: $gray;
+}
+
+.bg-lgray {
+    background: $lgray;
+}
+
+.bg-white {
+    background: $white;
+}
+
+.bg-beige { background: $beige; }
+
+.cl-white {
+    color: $white;
+}
+
+// margins
+
+.mgb-50 { margin-bottom: 50px; }
+
+
+
+.mobile-ta-center {
+    @include sm {
+        text-align: center;
+    }
+}
+
+
+
+.fw-image {
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}

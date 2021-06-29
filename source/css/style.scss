@@ -1,0 +1,33 @@
+@import "scss/generic/variables";
+  @import "scss/generic/reset";
+  @import "scss/generic/mixins";
+
+
+
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+@import "scss/objects/header";
+@import "scss/objects/footer"; 
+
+
+
+/*------------------------------------*\
+    $LAYOUT STRUCTURE
+\*------------------------------------*/
+
+@import "scss/base/global";
+@import "scss/objects/layout"; 
+@import "scss/objects/nav-list"; 
+@import "scss/objects/buttons";  
+@import "scss/objects/circle";  
+@import"scss/objects/heading";
+@import"scss/objects/text";
+@import"scss/objects/sections";
+@import"scss/objects/socials";
+@import"scss/objects/mb-navi";
+
+
+
+   

@@ -1,0 +1,28 @@
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    line-height: 1;
+    font-weight: 400;
+    border: 0;
+    text-align: center;
+    background: $lpurple;
+    color: $white;
+    border-radius: 10px;
+
+    &:hover,
+    &:focus {
+        background: $lpurple-hover;
+        color: $white;
+    }
+
+    &.disabled {
+       background: $lpurple-light;
+    }
+
+
+    @include sm {
+          padding: 10px 25px;
+          font-size: 15px; 
+
+    }
+}
